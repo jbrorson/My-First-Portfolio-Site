@@ -1,7 +1,7 @@
 import React from 'react';
 // import './App.css';
 
-function About() {
+const About = () => {
     return (
         <div>
             <h1>About me</h1>

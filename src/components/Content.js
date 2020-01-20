@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const Content = styled.h3`
+const Content = styled.span`
 /* background-color: whitesmoke; */
 /* height: 100vh;  */
 color: var(--mainDark);

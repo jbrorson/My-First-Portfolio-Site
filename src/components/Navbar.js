@@ -59,6 +59,8 @@ export default class Navbar extends Component {
                         <Link to="latestwork" className="link" >Latest Work</Link>
                     </li>
                 </ul>
+
+                
             </Nav>
 		);
 	}

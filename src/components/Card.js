@@ -20,7 +20,7 @@ const Card = styled.div`
 	/* height: 300px; 
     width: 300px;  */
     background: white; 
-    border-radius: 30px; 
+    border-radius: 5px; 
     display: flex; 
     flex-direction: column; 
     justify-content: space-around;
@@ -29,7 +29,7 @@ const Card = styled.div`
 	background: var(--mainWhite);
 	color: var(--mainDark);
 	width: 25vw; 
-	height: 20vh; 
+	height: 30vh; 
 	margin: auto 20px;  
 	padding: 0; 
 	margin-bottom: 20px;  

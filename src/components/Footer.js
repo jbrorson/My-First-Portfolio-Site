@@ -35,6 +35,12 @@ export default Footer;
 const FooterContainer = styled.div`
 .main-footer {
     width: 100vw;
+    margin-bottom: 0; 
+    padding: 25px 0;
+    font-size: 20px;
+    /* display: block; 
+    box-sizing: border-box;  */
+
     /* margin: -100px; */
     
     /* display: flex; 

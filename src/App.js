@@ -22,11 +22,18 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
-          <About />
-            <Content />
-              <Card title="My skills" message="I'm a front-end developer" />
-            <Card title="About me" message="27 Y/O, from Stockholm" />
-          <Card title="Contact" message="Write something to me..."/>
+          <Switch>
+            <Route path="/about">
+              <About />
+                </Route>
+                  <Route path="/contact">
+                    <About />
+                  </Route>
+                </Switch>
+              <Content />
+            <Card title="My skills" message="I'm a front-end developer" />
+            {/* <Card title="About me" message="27 Y/O, from Stockholm" />
+          <Card title="Contact" message="Write something to me..."/> */}
         <Footer />
       </Router>
     </div>  
