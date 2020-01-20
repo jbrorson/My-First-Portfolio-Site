@@ -30,8 +30,11 @@ function App() {
                     <About />
                   </Route>
                 </Switch>
-              <Content />
+              {/* <Content /> */}
             <Card title="My skills" message="I'm a front-end developer" />
+            <Card />
+            <Card />
+            <Card />
             {/* <Card title="About me" message="27 Y/O, from Stockholm" />
           <Card title="Contact" message="Write something to me..."/> */}
         <Footer />

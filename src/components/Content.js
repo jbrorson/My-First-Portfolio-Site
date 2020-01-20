@@ -6,10 +6,12 @@ const Content = styled.span`
 /* height: 100vh;  */
 color: var(--mainDark);
 width: 90vw;
+display: flex; 
+justify-content: flex-end;
 /* padding: 0 40px; */
-margin: auto; 
-padding: 20px;
-border-radius: 5px; 
+margin: 0; 
+padding: 0;
+/* border-radius: 5px;  */
 margin-bottom: 0; 
 /* display: flex; 
 justify-content: center; 

@@ -13,7 +13,6 @@ background: var(--mainDark);
 
 .nav-links {
 display: flex;
-/* flex-flow: row nowrap; */
 justify-content: space-around;
 align-items: center;
 list-style: none; 
@@ -24,14 +23,6 @@ width: 55vw;
 text-decoration: none; 
 color: var(--mainWhite);
 }
-
-/* .logo {
-justify-content: flex-start;
-display: flex;
-align-items: flex-start;
-list-style: none; 
-width: 35vw;
-} */
 
 @media (max-width: 640px) {
         display: block;
