@@ -1,0 +1,43 @@
+:root {
+    --mainDark: #191b1d;
+    --mainGrey: rgba(109, 109, 109);
+    --mainLightBlue:rgb(218, 223, 240);
+    --mainWhite: #ffffff; 
+    --mainBlue: #3a8de6;
+}
+.App {
+    /* text-align: center; */
+    height: 100vh; 
+    width: 100vw; 
+    display: block; 
+    justify-content: center;
+    background: var(--mainLightBlue);
+    color: white; 
+    position: absolute; 
+  }
+
+
+/* html {
+    margin: auto; 
+} */
+/* 
+.App {
+    text-align: center; 
+}
+
+nav {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh; 
+    background-color: #2d4957;
+    color: white; 
+}
+
+.nav-links {
+    width: 30%;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+} */

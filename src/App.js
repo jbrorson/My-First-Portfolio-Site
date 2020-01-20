@@ -1,13 +1,38 @@
 import React from 'react';
-import Toolbar from './components/Toolbar';
-import styled from 'styled-components';
-// import classes from './Toolbar.css'; 
+//import styled from 'styled-components';
 
+import {
+BrowserRouter as Router,
+   Switch,
+   Route,
+   Link
+} from "react-router-dom";
+
+import './App.css';
+
+import Navbar from './components/Navbar';
+//import Header from './components/Header';
+import Content from './components/Content';
+import Card from './components/Card';
+import Footer from './components/Footer';
+import About from './components/About';
 
 function App() {
   return (
-    <Toolbar />
+    <div className="App">
+      <Router>
+        <Navbar />
+          <About />
+            <Content />
+              <Card title="My skills" message="I'm a front-end developer" />
+            <Card title="About me" message="27 Y/O, from Stockholm" />
+          <Card title="Contact" message="Write something to me..."/>
+        <Footer />
+      </Router>
+    </div>  
   );
 }
 
 export default App;
+
+
