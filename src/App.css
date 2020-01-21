@@ -1,22 +1,21 @@
 :root {
-    --mainDark: #191b1d;
-    --mainGrey: rgba(109, 109, 109);
-    --mainLightBlue:rgb(218, 223, 240);
-    --mainWhite: #ffffff; 
-    --mainBlue: #3a8de6;
+  --mainDark: #191b1d;
+  --mainGrey: rgb(230, 230, 230);
+  --mainWhite: #f0eeee;
+  --mainLightBlue: rgb(186, 197, 231);
+  --mainBlue: #194472;
 }
-.App {
-    /* text-align: center; */
-    height: 100vh; 
-    width: 100vw; 
-    display: inline-block; 
-    justify-content: center;
-    background: var(--mainLightBlue);
-    color: white; 
-    position: absolute; 
-    margin: 0;
-  }
 
+/* font-family: 'Ubuntu', sans-serif; */
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: inline-block;
+  justify-content: center;
+  position: absolute;
+  margin: 0;
+}
 
 /* html {
     margin: auto; 

@@ -1,37 +1,35 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const FooterContainer = styled.span`
-width: 100vw;
-margin-bottom: 0; 
-padding: 25px 0;
-font-size: 20px;
-font-size: 13px;
-display: flex;
-justify-content: center;
-background: var(--mainDark);
-color: var(--mainWhite);
-position: relative;
-
+  width: 100vw;
+  margin-bottom: 0;
+  padding: 25px 0;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  background: var(--mainDark);
+  color: var(--mainWhite);
+  position: relative;
 `;
 
-
 function Footer() {
-    return(
-        <FooterContainer>
-            <div>
-            &copy;{new Date().getFullYear()} Josefines portfolio - All Rights Reserved
-            </div>
-        </FooterContainer>
-        
-    );
+  return (
+    <FooterContainer>
+      <div>
+        &copy;{new Date().getFullYear()} Josefines portfolio - All Rights
+        Reserved
+      </div>
+    </FooterContainer>
+  );
 }
 
-export default Footer; 
+export default Footer;
 
 // const FooterContainer = styled.div`
 //     width: 100vw;
-//     margin-bottom: 0; 
+//     margin-bottom: 0;
 //     padding: 25px 0;
 //     font-size: 20px;
 //     font-size: 13px;
@@ -43,12 +41,11 @@ export default Footer;
 // }
 
 // ul {
-//     list-style: none; 
+//     list-style: none;
 //     margin: 0;
 //     padding: 0;
 // }
 // `;
-
 
 // <FooterContainer className="main-footer">
 //             <div className="footer-middle">
@@ -62,7 +59,7 @@ export default Footer;
 //                                 <li>Lorem ipsum</li>
 //                                 <li>Lorem ipsum</li>
 //                             </ul>
-//                         </div>  
+//                         </div>
 //                     </div>
 //                     {/* FOOTER BOTTOM */}
 //                     <div className="footer-bottom">
