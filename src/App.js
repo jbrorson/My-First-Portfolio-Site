@@ -12,12 +12,12 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import FirstPage from "./components/FirstPage";
 
-// const projects = [
-//   {
-//     title: "Project 1",
-//     url: "https://github.com/jbrorson/React---Portfolio"
-//   }
-// ];
+const projects = [
+  {
+    title: "Project 1",
+    url: "https://github.com/jbrorson/React---Portfolio"
+  }
+];
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
           <Navbar />
           <FirstPage message="Hi, I'm Josefine, I'm a Front-End Developer" />
 
-          <Route exact path="about" component={About} />
+          <Route path="about" component={About} />
         </Switch>
         {/* <Switch>
           <Route path="/about">
@@ -42,9 +42,9 @@ function App() {
         </Switch> */}
         {/* <Content /> */}
         <Card title="My skills" />
+        {/* <Card />
         <Card />
-        <Card />
-        <Card />
+        <Card /> */}
         {/* <Card title="About me" message="27 Y/O, from Stockholm" />
           <Card title="Contact" message="Write something to me..."/> */}
         <Footer />

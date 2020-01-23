@@ -1,9 +1,10 @@
 :root {
   --mainDark: #191b1d;
   --mainGrey: rgb(230, 230, 230);
-  --mainWhite: #f0eeee;
+  --mainWhite: #f0f0f0;
   --mainLightBlue: rgb(186, 197, 231);
   --mainBlue: #194472;
+  --shadowColor: #a2a2a2;
 }
 
 /* font-family: 'Ubuntu', sans-serif; */
