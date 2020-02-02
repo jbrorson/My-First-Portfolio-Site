@@ -10,7 +10,7 @@ const FooterContainer = styled.span`
   display: flex;
   justify-content: center;
   background: var(--mainDark);
-  color: var(--mainWhite);
+  color: var(--mainLight);
   position: relative;
 `;
 

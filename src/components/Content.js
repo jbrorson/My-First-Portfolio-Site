@@ -1,33 +1,44 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+import React, { Component } from "react";
+import styled from "styled-components";
 
-const Content = styled.span`
-/* background-color: whitesmoke; */
-/* height: 100vh;  */
-color: var(--mainDark);
+const Content = styled.div`
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--mainLight);
+  width: 50%;
+  height: 100vh;
+  overflow-wrap: wrap;
+  /* margin: 0;
+  padding: 0; */
+  /* display: flex; */
+  /* position: relative; */
+
+  &:hover {
+    background-color: var(--mainHover);
+  }
+  /* color: var(--mainDark);
 width: 90vw;
 display: flex; 
 justify-content: flex-end;
-/* padding: 0 40px; */
 margin: 0; 
 padding: 0;
-/* border-radius: 5px;  */
-margin-bottom: 0; 
-/* display: flex; 
-justify-content: center; 
-/* overflow: auto;  */
-/* padding-bottom: 50px;  */
-/* position: relative; */
-/* min-height: 100vh;  */
+margin-bottom: 0;  */
 `;
 
-export default class Contentstyle extends Component {
-	render() {
-		return (
-            <Content>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
-				
-			</Content>
-		);
-	}
+export default class ContentStyle extends Component {
+  render() {
+    return (
+      <Content>
+        <h3>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.{" "}
+        </h3>
+      </Content>
+    );
+  }
 }

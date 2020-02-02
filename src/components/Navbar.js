@@ -8,21 +8,22 @@ const Nav = styled.nav`
   text-transform: uppercase;
   height: 12vh;
   background: var(--mainDark);
+
   .nav-links {
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    width: 50vw;
+    width: 40vw;
     font-family: "Ubuntu", sans-serif;
   }
   .link {
     text-decoration: none;
-    color: var(--mainWhite);
+    color: var(--mainLight);
   }
-  @media (max-width: 640px) {
+  /* @media (max-width: 640px) {
     display: block;
-  }
+  } */
 `;
 
 export default class Navbar extends Component {
@@ -42,6 +43,11 @@ export default class Navbar extends Component {
             </Link>
           </li>
           <li>
+            <Link to="/weather" className="link">
+              Location
+            </Link>
+          </li>
+          {/* <li>
             <Link to="/contact" className="link">
               Get in touch
             </Link>
@@ -50,7 +56,7 @@ export default class Navbar extends Component {
             <Link to="latestwork" className="link">
               Latest Work
             </Link>
-          </li>
+          </li> */}
         </ul>
       </Nav>
     );

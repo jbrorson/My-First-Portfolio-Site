@@ -1,44 +1,48 @@
 import React from "react";
 import styled from "styled-components";
-// import JBimg_optimized from "/images/JBimg_optimized";
+// import Content from "./components/Content";
 
-const projects = [
-  {
-    title: "Project 1",
-    url: "https://github.com/jbrorson/React---Portfolio"
-  }
-];
+// const information = [
+//   {
+//     title: "Project",
+//     url: "https://github.com/jbrorson/React---Portfolio",
+//   }
+// ];
 
-const Card = styled.div`
+// const profile = [
+//   {
+//     icon: "img src={require('/images/JBimg_optimized.jpg')}"
+//   }
+// ];
+
+const Card = styled.span`
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
   font-family: "Ubuntu", sans-serif;
-  background: var(--mainWhite);
   color: var(--shadowColor);
   width: 50%;
   height: 100vh;
-  margin: auto 0;
-  padding: 0;
-  display: inline-flex;
-  position: relative;
+  /* position: wrap; */
+
   &:hover {
-    background-color: var(--mainGrey);
+    background-color: var(--mainHover);
   }
   img {
     height: 300px;
     border-radius: 2%;
     margin: 20px;
-    /* padding: 20px; */
-    box-shadow: 10px 10px 5px 0px;
+    box-shadow: 5px 10px 5px 0px;
   }
+  /* span #text {
+    color: black;
+  } */
 `;
 
 const CardStyle = props => {
   return (
     <Card>
       <img src="/images/JBimg_optimized.jpg" alt="" />
-      {props.title || "lorem ipsum"}
+      {props.title} Come visit me!
+      {props.skills}
     </Card>
   );
 };
