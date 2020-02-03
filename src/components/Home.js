@@ -1,9 +1,10 @@
 import React from "react";
+import Card from "./Card";
 
 const Home = () => {
   return (
     <div>
-      <p>HOME</p>
+      <Card />
     </div>
   );
 };

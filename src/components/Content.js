@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const Content = styled.div`
-  display: flex;
+  display: block;
   justify-content: center;
   text-align: center;
   margin: 0;
@@ -10,7 +10,7 @@ const Content = styled.div`
   color: var(--mainLight);
   width: 50%;
   height: 100vh;
-  overflow-wrap: wrap;
+  /* overflow-wrap: wrap; */
   /* margin: 0;
   padding: 0; */
   /* display: flex; */

@@ -1,64 +1,51 @@
 import React, { Component } from "react";
+import DesktopNavbar from "./DesktopNavbar";
+import MobileNavbar from "./MobileNavbar";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
-const Nav = styled.nav`
+const MyNavbar = styled.div`
   display: flex;
-  justify-content: flex-end;
-  text-transform: uppercase;
-  height: 12vh;
-  background: var(--mainDark);
-
-  .nav-links {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    width: 40vw;
-    font-family: "Ubuntu", sans-serif;
-  }
-  .link {
-    text-decoration: none;
-    color: var(--mainLight);
-  }
-  /* @media (max-width: 640px) {
-    display: block;
-  } */
+  flex-flow: column nowrap;
+  justify-content: flex-start;
 `;
 
-export default class Navbar extends Component {
+class Navbar extends Component {
+  state = {
+    displayMobileNavbar: false
+  };
+
+  conponentDidMount = () => {
+    window.addEventListener("resize", this.checkAndAutoHideMobileNavbar);
+  };
+
+  conponentWillUnmount = () => {
+    window.removeEventListener("resize", this.checkAndAutoHideMobileNavbar);
+  };
+
+  toggleMobileNavbar = () => {
+    this.setState(prevState => {
+      return { displayMobileNavbar: !prevState.displayMobileNavbar };
+    });
+  };
+
+  checkAndAutoHideMobileNavbar = () => {
+    const screenWidth = window.innerWidth;
+
+    if (this.state.displayMobileNavbar && screenWidth > 768) {
+      this.setState({
+        displayMobileNavbar: false
+      });
+    }
+  };
+
   render() {
     return (
-      <Nav>
-        {/* <ul className="nav-logo">Josefine</ul> */}
-        <ul className="nav-links">
-          <li>
-            <Link to="/" className="link">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/about" className="link">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to="/weather" className="link">
-              Location
-            </Link>
-          </li>
-          {/* <li>
-            <Link to="/contact" className="link">
-              Get in touch
-            </Link>
-          </li>
-          <li>
-            <Link to="latestwork" className="link">
-              Latest Work
-            </Link>
-          </li> */}
-        </ul>
-      </Nav>
+      <MyNavbar>
+        <DesktopNavbar toggleMobileNavbar={this.toggleMobileNavbar} />
+        <MobileNavbar displayMobileNavbar={this.state.displayMobileNavbar} />
+      </MyNavbar>
     );
   }
 }
+
+export default Navbar;

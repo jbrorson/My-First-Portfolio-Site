@@ -1,17 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 
-const FooterContainer = styled.span`
+const FooterContainer = styled.footer`
   width: 100vw;
-  margin-bottom: 0;
+  display:flex;
+  position:fixed; 
   padding: 25px 0;
   font-family: "Ubuntu", sans-serif;
   font-size: 13px;
   display: flex;
   justify-content: center;
-  background: var(--mainDark);
-  color: var(--mainLight);
-  position: relative;
+  background: ${props => props.theme.main};
+  color: ${props => props.theme.mainTextColor};
+  /* box-shadow: 0 5px ${props => props.theme.shadow}; */
 `;
 
 function Footer() {

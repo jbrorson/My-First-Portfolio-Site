@@ -19,9 +19,9 @@ const Card = styled.span`
   display: flex;
   font-family: "Ubuntu", sans-serif;
   color: var(--shadowColor);
-  width: 50%;
+  width: 50vw;
   height: 100vh;
-  /* position: wrap; */
+  position: absolute;
 
   &:hover {
     background-color: var(--mainHover);
