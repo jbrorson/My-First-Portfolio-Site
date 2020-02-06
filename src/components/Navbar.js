@@ -5,8 +5,12 @@ import styled from "styled-components";
 
 const MyNavbar = styled.div`
   display: flex;
+  width: 100vw;
   flex-flow: column nowrap;
   justify-content: flex-start;
+  /* position: relative; */
+  /* top: 0; */
+  /* margin-bottom: 20px; */
 `;
 
 class Navbar extends Component {

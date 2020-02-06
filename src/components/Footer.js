@@ -2,9 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 const FooterContainer = styled.footer`
+  height: 10vh;
   width: 100vw;
-  display:flex;
-  position:fixed; 
+  position: fixed;
+  bottom: 0;
   padding: 25px 0;
   font-family: "Ubuntu", sans-serif;
   font-size: 13px;
@@ -12,7 +13,6 @@ const FooterContainer = styled.footer`
   justify-content: center;
   background: ${props => props.theme.main};
   color: ${props => props.theme.mainTextColor};
-  /* box-shadow: 0 5px ${props => props.theme.shadow}; */
 `;
 
 function Footer() {
@@ -27,47 +27,3 @@ function Footer() {
 }
 
 export default Footer;
-
-// const FooterContainer = styled.div`
-//     width: 100vw;
-//     margin-bottom: 0;
-//     padding: 25px 0;
-//     font-size: 20px;
-//     font-size: 13px;
-//     display: flex;
-//     flex-flow: nowrap;
-//     justify-content: center;
-//     background: var(--mainDark);
-//     color: var(--mainWhite);
-// }
-
-// ul {
-//     list-style: none;
-//     margin: 0;
-//     padding: 0;
-// }
-// `;
-
-// <FooterContainer className="main-footer">
-//             <div className="footer-middle">
-//                 <div className="container">
-//                     <div className="row">
-//                         {/* COLUMN 1 */}
-//                         <div className="col1">
-//                             <h4>Lorem ipsum</h4>
-//                             <ul className="list-unstyled">
-//                                 <li>Lorem ipsum</li>
-//                                 <li>Lorem ipsum</li>
-//                                 <li>Lorem ipsum</li>
-//                             </ul>
-//                         </div>
-//                     </div>
-//                     {/* FOOTER BOTTOM */}
-//                     <div className="footer-bottom">
-//                         <p className="text-xs-center">
-//                             &copy;{new Date().getFullYear()} Josefines portfolio - All Rights Reserved
-//                         </p>
-//                     </div>
-//                 </div>
-//             </div>
-//         </FooterContainer>

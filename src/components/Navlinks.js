@@ -9,21 +9,21 @@ let Navlinks = props => {
 
   return (
     <ul className="nav-links">
-      <li>
-        <Link to="/" className="link" tabIndex={tempTabIndex}>
-          Home
-        </Link>
-      </li>
-      <li>
-        <Link to="/about" className="link" tabIndex={tempTabIndex}>
-          About
-        </Link>
-      </li>
-      <li>
-        <Link to="/contact" className="link" tabIndex={tempTabIndex}>
-          Contact
-        </Link>
-      </li>
+      <Link to="/" className="link" tabIndex={tempTabIndex}>
+        <li>Home</li>
+      </Link>
+
+      <Link to="/about" className="link" tabIndex={tempTabIndex}>
+        <li>About</li>
+      </Link>
+
+      <Link to="/contact" className="link" tabIndex={tempTabIndex}>
+        <li>Contact</li>
+      </Link>
+
+      <Link to="/weather" className="link" tabIndex={tempTabIndex}>
+        <li>Search weather</li>
+      </Link>
     </ul>
   );
 };

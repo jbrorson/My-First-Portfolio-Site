@@ -5,7 +5,7 @@ import Navlinks from "./Navlinks";
 const MyMobileNavbar = styled.nav`
   width: 50vw;
   background: ${props => props.theme.main};
-  box-shadow: -5px 5px 5px ${props => props.theme.shadow};
+  box-shadow: -2px 2px 2px ${props => props.theme.shadow};
   align-self: flex-end;
 
   transition: transform 1s;
@@ -33,9 +33,8 @@ const MyMobileNavbar = styled.nav`
     padding: 10px 10px;
     color: ${props => props.theme.mainTextColor};
     text-decoration: none;
-    text-transform: uppercase;
     border-radius: 10px;
-    font-size: 1.5rem;
+    text-transform: uppercase;
 
     &:focus {
       background: ${props => props.theme.shadow};

@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --mainDark: #0c1e41;
   --mainHover: #f9f7f6;
   --mainLight: #bfada3;
@@ -8,7 +8,7 @@
 * {
   margin: 0;
   padding: 0;
-}
+} */
 
 /* html {
   background: url(hämta bild till projekt om denna url ska fungera);
@@ -39,12 +39,10 @@
   text-align: center;
 } */
 
-#root div {
-  /* display: block;
-  align-items: center; */
+/* #root div {
   margin: 0;
   padding: 0;
-}
+} */
 /* body div.Weather {
   display: flex;
   align-items: center;
