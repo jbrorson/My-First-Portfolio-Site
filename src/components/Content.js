@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-//import Card from "./Card";
 
 const Content = styled.div`
   margin-top: 20vh;
@@ -10,23 +9,25 @@ const Content = styled.div`
   color: ${props => props.theme.main};
 `;
 
-// function Content() {
-//   return (
-//     <Content>
-//       <div>Hello this is content about me</div>
-//     </Content>
-//   );
-// }
-
 export default class ContentStyle extends Component {
   render() {
     return (
-      <Content>
-        <h3>Hello this is content about me</h3>
-        {/* <a href>https://github.com/jbrorson</a>
+      <div>
+        <Content>
+          <h3>Hello and welcome to my portfolio website</h3>
           <br></br>
-          <a href>https://www.linkedin.com/in/josefine-brorson-b8a69a118/</a> */}
-      </Content>
+          <p>
+            I am in first year of my education to become a Front-end Developer
+          </p>
+          <p>Learning React.js, CSS, Git and so on...</p>
+          <p>
+            In my sparetime I play soccer and enjoy haning out with my friends
+            and my boyfriend
+          </p>
+          <br></br>
+          <h4>PS. This page is still under progress ;)</h4>
+        </Content>
+      </div>
     );
   }
 }

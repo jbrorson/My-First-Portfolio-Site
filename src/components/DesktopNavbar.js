@@ -1,5 +1,4 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Navlinks from "./Navlinks";
 import mobileIcon from "../images/menu.svg";
@@ -16,17 +15,12 @@ const MyDesktopNavbar = styled.nav`
   box-shadow: 0 2px 2px ${props => props.theme.shadow};
 
   .logo {
-    display: flex; 
-    /* position: fixed;  */
-    /* left: 0; */
+    display: flex;
     height: 10vh;
     font-size: 2.8vh;
     color: ${props => props.theme.mainTextColor};
-    align-items: center; 
-    font-family: 'Sigmar One', cursive;
-    /* text-shadow: 3px 3px 3px ${props => props.theme.shadow}; */
-    /* text-transform: uppercase; */
-    
+    align-items: center;
+    font-family: "Sigmar One", cursive;
   }
 
   .nav-links {
@@ -38,7 +32,7 @@ const MyDesktopNavbar = styled.nav`
     align-items: center;
     width: 48vw;
     list-style: none;
-    font-family: 'Sigmar One', cursive;
+    font-family: "Sigmar One", cursive;
 
     @media screen and (max-width: 768px) {
       display: none;
@@ -70,7 +64,6 @@ const MyMobileNavButton = styled.button`
   width: 5vh;
   margin: 30px;
   border: none;
-  /* color: ${props => props.theme.mainTextColor}; */
   display: none;
 
   @media screen and (max-width: 768px) {

@@ -9,7 +9,6 @@ const MyMobileNavbar = styled.nav`
   align-self: flex-end;
 
   transition: transform 1s;
-  /* om navbar syns = true, annars = false. Går att ändra state till true*/
   transform: translateX(
     ${props => (props.displayMobileNavbar ? "0%" : "calc(100% + 10px)")}
   );

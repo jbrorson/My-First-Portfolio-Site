@@ -8,9 +8,6 @@ const MyNavbar = styled.div`
   width: 100vw;
   flex-flow: column nowrap;
   justify-content: flex-start;
-  /* position: relative; */
-  /* top: 0; */
-  /* margin-bottom: 20px; */
 `;
 
 class Navbar extends Component {

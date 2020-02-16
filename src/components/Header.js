@@ -22,24 +22,11 @@ const NavLinks = styled.div`
   color: var(--mainLight);
 `;
 
-// const Links = styled.div`
-//   display: flex;
-//   float: right;
-//   margin-right: 20px;
-//   list-style: none;
-//   color: var(--mainLight);
-//   align-items: center;
-//   justify-content: space-between;
-// `;
-
 const LogoStyle = styled.span`
   float: left;
   margin-left: 20px;
   color: var(--mainLight);
 `;
-/* @media (max-width: 640px) {
-    display: block;
-  } */
 
 export default class Navbar extends Component {
   render() {
@@ -49,7 +36,6 @@ export default class Navbar extends Component {
           <LogoStyle />
           <NavLinks>
             <ul>
-              {/* <Links> */}
               <li>
                 <Link to="/" className="link">
                   Home
@@ -65,17 +51,6 @@ export default class Navbar extends Component {
                   Location
                 </Link>
               </li>
-              {/* <li>
-            <Link to="/contact" className="link">
-              Get in touch
-            </Link>
-          </li>
-          <li>
-            <Link to="latestwork" className="link">
-              Latest Work
-            </Link>
-          </li> */}
-              {/* </Links> */}
             </ul>
           </NavLinks>
         </div>

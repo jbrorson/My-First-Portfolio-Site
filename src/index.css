@@ -12,37 +12,16 @@ code {
     monospace;
 }
 
-/* * {
-  margin: 0;
-  padding: 0;
-} */
-
 #root {
-  /* position: fixed;
-  top: 0; */
   background-color: #f9f9f9;
   height: 100vh;
-  display: inline-flex;
-  justify-content: center;
-  text-align: center;
   width: 100%;
 }
 
 .sc-bxivhb {
   height: 0;
 }
-/* #root div {
-  height: 50px;
-} */
 
-/* align-items: center; */
-/* height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0; */
-
-/* .App {
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-} */
+ul {
+  padding: 0;
+}
