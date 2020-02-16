@@ -17,6 +17,7 @@ export default class ContentStyle extends Component {
     return (
       <About>
         <Content />
+        <ContentStyle />
       </About>
     );
   }

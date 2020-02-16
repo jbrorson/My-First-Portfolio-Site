@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+//import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Contact = styled.div`
@@ -15,12 +16,14 @@ export default class ContactStyle extends Component {
   render() {
     return (
       <div>
+        {/* <Link to="/contact"> */}
         <Contact>
           <h3>Get in touch</h3>
-          <a href>https://github.com/jbrorson</a>
+          <h5>https://github.com/jbrorson</h5>
           <br></br>
-          <a href>https://www.linkedin.com/in/josefine-brorson-b8a69a118/</a>
+          <h5>https://www.linkedin.com/in/josefine-brorson-b8a69a118/</h5>
         </Contact>
+        {/* </Link> */}
       </div>
     );
   }
