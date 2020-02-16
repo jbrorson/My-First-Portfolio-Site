@@ -17,21 +17,21 @@ import styled from "styled-components";
 
 const Card = styled.span`
   height: 100vh;
-  width: 50%;
+  width: 100%;
+  margin: 2rem;
+  padding-top: 2rem;
   display: flex;
   justify-content: flex-start;
   margin-top: 12.5vh;
   font-family: "Ubuntu", sans-serif;
-  color: var(--shadowColor);
+  color: ${props => props.theme.main};
 
   &:hover {
     background-color: ${props => props.theme.mainHover};
   }
   img {
     height: 300px;
-    /* border-radius: 50%; */
-    margin: 20px;
-    /* box-shadow: 5px 10px 5px 0px ${props => props.theme.shadow}; */
+    margin-right: 3rem;
   }
 `;
 
@@ -39,8 +39,9 @@ const CardStyle = props => {
   return (
     <Card>
       <img src="/images/JBimg_optimized.jpg" alt="Profile" />
-      {props.title} Hi, I'm Josefine!
-      {props.skills}
+      {props.title} Hi, I'm Josefine! I'm a front end developer based in
+      Stockholm, Sweden.
+      {/* {props.skills} */}
     </Card>
   );
 };

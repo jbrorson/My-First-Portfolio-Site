@@ -3,5 +3,4 @@ export const theme = {
   shadow: "#B96D5B",
   mainTextColor: "#ededed",
   mainHover: "#f9f7f6"
-  // shadowColor: "#B96D5B"
 };

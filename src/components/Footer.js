@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const FooterContainer = styled.footer`
-  height: 10vh;
+  height: 5vh;
   width: 100vw;
   position: fixed;
   bottom: 0;

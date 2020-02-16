@@ -3,13 +3,11 @@ import styled from "styled-components";
 //import Card from "./Card";
 
 const Content = styled.div`
-  display: block;
-  justify-content: center;
   margin-top: 20vh;
   padding: 20px;
   text-align: center;
   font-family: "Ubuntu", sans-serif;
-  color: ${props => props.theme.mainTextColor};
+  color: ${props => props.theme.main};
 `;
 
 // function Content() {

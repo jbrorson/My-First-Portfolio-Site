@@ -38,6 +38,7 @@ const MyDesktopNavbar = styled.nav`
     align-items: center;
     width: 48vw;
     list-style: none;
+    font-family: 'Sigmar One', cursive;
 
     @media screen and (max-width: 768px) {
       display: none;
